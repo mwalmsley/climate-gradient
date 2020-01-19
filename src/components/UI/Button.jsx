@@ -10,7 +10,8 @@ const btn = (props) => {
                 fontSize: '1.5rem',
                 height: '6rem',
                 width: '15rem'
-            }}>
+            }}
+            onClick={props.click}>
             {props.name}
         </Button>
     );

@@ -1,4 +1,11 @@
-body {
+.nav { 
+    background-color: #1e7b1e; 
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 3rem;
+}
+
+.b {
     padding: 3rem;
     text-align: center;
 }
@@ -16,18 +23,32 @@ body {
 
 .gifStyle {
     display: inline-block;
-    border: 2px solid black;
     height: 15rem;
     width: 15rem;
 }
 
-.b {
-    background-color: rgb(138, 127, 165);
+.loadingBody {
+    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: Black;
+}
+
+.earthImage {
+    height: 12rem;
+    width: 12rem
+}
+
+.countdown {
+    padding-top: 2rem;
+}
+
+.image {
+    border: 2px solid black;
+    height: 10rem;
+    width: 100%;
 }
