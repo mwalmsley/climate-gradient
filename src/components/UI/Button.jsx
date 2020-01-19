@@ -4,17 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const btn = (props) => {
     return (
-        <Button 
-            variant="success"
-            style={{
-                fontSize: '1.5rem',
-                height: '6rem',
-                width: '15rem'
-            }}
-            onClick={props.click}>
-            {props.name}
-        </Button>
+        // <Button 
+        //     variant="success"
+  
+        //     onChange={props.upload}>
+        //     {props.name}
+        // </Button>
+        <form>
+            <div class="form-group">
+                <label htmlFor='single'>{props.name}</label>
+                <br></br>
+                <input className='btn fadein button' type='file' id='single' onChange={props.upload}  /> 
+            </div>
+        </form>
     );
 }
 
 export default btn;
+

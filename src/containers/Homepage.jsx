@@ -12,18 +12,20 @@ class Homepage extends Component {
         return(
             <div>
                 <div className={styles.nav}>
-                    
+                    <h3>Climate Gradient</h3>
                 </div>
                 <div className={styles.b}>
                     <div className={styles.upperdiv}>
                         <img src={Image} className={styles.gifStyle} />
                     </div>
                     <div className={styles.lowerdiv}>
-                        <UploadImage />
-                        <Location />
+                        <UploadImage
+                            upload={this.props.upload}
+                            name='Select Image'
+                        />
                     </div>
                 </div>
-            </div>
+         </div>
         );
     }   
 }
