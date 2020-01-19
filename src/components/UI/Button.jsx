@@ -6,21 +6,17 @@ const btn = (props) => {
     return (
         // <Button 
         //     variant="success"
-        //     style={{
-        //         fontSize: '1.5rem',
-        //         height: '6rem',
-        //         width: '15rem'
-        //     }}
+  
         //     onChange={props.upload}>
         //     {props.name}
         // </Button>
-        <div className='buttons fadein'>
-            <div className='button'>
-                <label htmlFor='single'>
-                </label>
-            <input type='file' id='single' onChange={props.upload} /> 
+        <form>
+            <div class="form-group">
+                <label htmlFor='single'>{props.name}</label>
+                <br></br>
+                <input className='btn fadein button' type='file' id='single' onChange={props.upload}  /> 
             </div>
-        </div>
+        </form>
     );
 }
 
