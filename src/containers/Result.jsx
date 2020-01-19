@@ -23,15 +23,18 @@ class Result extends Component {
         return(
             <div>
                 <div className={styles.nav}>
-                    <h3>Climate Gradient</h3>
+                    <div className={styles.navtext}>
+                        <h3>Climate Gradient</h3>
+                    </div>
                     <i class="fas fa-bars"></i>
                 </div>
                 <div className={styles.b}>
-                    <h2>What Will Your World Look Like</h2>
+                    <h3>What Will Your World Look Like</h3>
                     <h4>Present</h4>
                     <img src={this.props.images[0]} alt='' />
                     <h4>Future</h4>
                     <img src={this.props.images[1]} alt='' />
+                    <br></br>
                     <br></br>
                     <h4>{quotes[Math.floor(Math.random()*quotes.length)]}</h4>
                 </div>

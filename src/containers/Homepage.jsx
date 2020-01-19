@@ -12,7 +12,7 @@ class Homepage extends Component {
         return(
             <div>
                 <div className={styles.nav}>
-                    <h3>Climate Gradient</h3>
+                    <h3 className={styles.navtext}>Climate Gradient</h3>
                 </div>
                 <div className={styles.b}>
                     <div className={styles.upperdiv}>

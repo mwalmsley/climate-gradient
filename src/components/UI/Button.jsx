@@ -12,7 +12,9 @@ const btn = (props) => {
         // </Button>
         <form>
             <div class="form-group">
-                <label htmlFor='single'>{props.name}</label>
+                <label htmlFor='single'>
+                    <h4>{props.name}</h4>
+                </label>
                 <br></br>
                 <input className='btn fadein button' type='file' id='single' onChange={props.upload}  /> 
             </div>
