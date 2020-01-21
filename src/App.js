@@ -20,6 +20,8 @@ class App extends Component {
 
 
   onChange(e) {
+
+    const server_ip = 'http://35.224.220.162:5000'
         
     const files = Array.from(e.target.files)
     this.setState({ uploading: true })
@@ -33,7 +35,7 @@ class App extends Component {
     formData.append('image_height', 28)
     formData.append('image_width', 28)
 
-    fetch(`http://35.239.235.168:5000/results`, {
+    fetch(server_ip + `/results`, {
         method: 'POST',
         body: formData
     })
@@ -41,7 +43,7 @@ class App extends Component {
     .then(images => {
       this.setState({
         uploading: false,
-        images: ['http://35.239.235.168:5000/' + images['input_image'], 'http://35.239.235.168:5000/' + images['styled_image']]
+        images: [server_ip + '/' + images['input_image'], server_ip + '/' + images['styled_image']]
       })
     }
     )

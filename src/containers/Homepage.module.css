@@ -5,6 +5,13 @@
     height: 3rem;
 }
 
+.navtext {
+    text-align: center;
+    text-justify: auto;
+    color: white;
+    padding-top: 7px;
+    /* display: inline-block; */
+}
 .b {
     padding: 3rem;
     text-align: center;
